@@ -1,0 +1,29 @@
+openapi: "3.0.0"
+info:
+  title: Account Service
+  version: 1.0.0
+  description: This service is in charge of processing user signups
+paths:
+  /resource:
+    get:
+      operationId: get
+      responses:
+        '200':
+          description: Some stuff
+          content:
+            application/json:    
+              schema:
+                type: object
+                oneOf:
+                  - type: object
+                    properties:
+                      property: 
+                        type: string
+                    required:
+                    - property
+                  - type: object
+                    properties:
+                      other_property:
+                        type: string
+                    required:
+                    - other_property

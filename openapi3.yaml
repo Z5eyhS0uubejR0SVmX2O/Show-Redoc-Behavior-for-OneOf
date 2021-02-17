@@ -15,13 +15,15 @@ paths:
               schema:
                 type: object
                 oneOf:
-                  - type: object
+                  - title: Type A
+                    type: object
                     properties:
                       property: 
                         type: string
                     required:
                     - property
-                  - type: object
+                  - title: Type B
+                    type: object
                     properties:
                       other_property:
                         type: string

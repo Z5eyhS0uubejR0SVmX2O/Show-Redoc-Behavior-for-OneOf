@@ -14,18 +14,46 @@ paths:
             application/json:    
               schema:
                 type: object
+                allOf:
+                  - title: Location
+                    type: object
+                    properties:
+                      location:
+                        type: string
+                        example: Under the couch
+                    required:
+                    - location
                 oneOf:
-                  - title: Type A
+                  - title: Flavor
                     type: object
                     properties:
-                      property: 
+                      flavor:
                         type: string
+                        example: Strawberry
                     required:
-                    - property
-                  - title: Type B
+                    - flavor
+                  - title: Toxicity
                     type: object
                     properties:
-                      other_property:
+                      toxicity:
                         type: string
+                        example: Extremely Poisonous
                     required:
-                    - other_property
+                    - toxicity
+                anyOf:
+                  - title: Color
+                    type: object
+                    properties:
+                      color: 
+                        type: string
+                        example: Green
+                    required:
+                    - color
+                  - title: Shape
+                    type: object
+                    properties:
+                      shape:
+                        type: string
+                        example: Rectangular
+                    required:
+                    - shape

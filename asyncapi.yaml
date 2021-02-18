@@ -13,9 +13,9 @@ components:
     UserSignedUp:
       payload:
         type: object
-        propeties:
-          - collar_type:
-              type: string
+        properties:
+          collar_type:
+            type: string
         required:
           - collar_type
         oneOf:

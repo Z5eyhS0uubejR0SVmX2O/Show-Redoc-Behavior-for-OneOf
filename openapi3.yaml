@@ -15,8 +15,8 @@ paths:
               schema:
                 type: object
                 properties:
-                  - collar_type:
-                      type: string
+                  collar_type:
+                    type: string
                 required:
                   - collar_type
                 oneOf:

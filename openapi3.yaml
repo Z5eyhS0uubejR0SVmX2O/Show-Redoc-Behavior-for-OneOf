@@ -14,18 +14,23 @@ paths:
             application/json:    
               schema:
                 type: object
+                propeties:
+                  - collar_type:
+                      type: string
+                required:
+                  - collar_type
                 oneOf:
-                  - title: Type A
+                  - title: Dog
                     type: object
                     properties:
-                      property: 
+                      bark_type: 
                         type: string
                     required:
-                    - property
-                  - title: Type B
+                    - bark_type
+                  - title: Cat
                     type: object
                     properties:
-                      other_property:
+                      meow_type:
                         type: string
                     required:
-                    - other_property
+                    - meow_type
